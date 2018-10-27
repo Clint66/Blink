@@ -25,11 +25,7 @@ int main(void)
 	{
 		_delay_ms(DELAY);	
 
-		PORTB &= ~(1<<PIN);
-
-		_delay_ms(DELAY);	
-
-		PORTB |= (1<<PIN);
+		PORTB ^= (1<<PIN);
 
 	}
 }
